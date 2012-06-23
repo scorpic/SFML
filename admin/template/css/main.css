@@ -1,0 +1,244 @@
+select { margin: 0px;}
+.adminMainBar {
+    width: 650px;
+    display: inline-table;
+    vertical-align: top;
+}
+.adminSubBar {
+    width: 300px;
+    display: inline-table;
+    height: 100%;
+}
+.ListTableLeftBar {
+    color: #333;
+    font-size: 18px;
+    padding-left: 30px;
+}
+span.addansact:hover, span.delansact:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #69C;
+}
+.MainList {
+    font-size: 23px;
+    color: #fff;
+    padding: 25px 10px 30px 10px;
+    width:175px;
+    height: 90px; 
+    display: inline-table;
+    margin: 0 20px 10px 0px;
+    text-align: center;
+}
+.MainList div {
+    margin: 40px 10px 30px 10px;
+}
+.MainList.first {
+    margin: 0;
+}
+.settings_table {
+    width: 100%;
+}
+.settings_table .title {
+    width: 150px;
+    display: inline-table;
+    color: #666;
+}
+.settings_table a {
+    color: #69C;
+}
+.settings_table .text {
+    width: 146px;
+    display: inline-table;
+    text-align: right;
+}
+ul.test {
+    width: 700px;
+}
+.editable {
+    margin-bottom: 15px;
+    float: left;
+    width: 600px;
+}
+.editable noPad {
+    height: 34px;
+}
+.editBox {
+    width: 300px;
+    padding: 10px;
+    margin: 0px;
+    height: 23px;
+}
+.okbox {
+    float: left;
+    width: 200px;
+    padding: 14px 10px 10px 10px;
+    height: 23px;
+
+}
+.okbox a {
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 19px;
+}
+.toogle {
+    width: 940px;
+    border-bottom: 1px solid #ddd;
+    padding: 2px 2px 2px 25px;
+    color: #333;
+    display: inline-table;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 0px 15px;
+    cursor: pointer;
+    background: url("../images/filterset_off.gif") no-repeat scroll 8px 7px transparent;
+}
+.toogle.on {
+    background: url("../images/filterset_on.gif") no-repeat scroll 8px 7px transparent;
+}
+.dropbox_top {
+    float: left;
+    width: 476px;
+    height: 4px;
+    background: url('../images/fileupload/blue_line.jpg') repeat-x rgba(255,255,255,0.5);
+    border-radius: 5px 5px 0 0;
+}
+#dropbox{
+	background: #F7F7F7;
+        border-radius:3px;
+	position: relative;
+	min-height: 315px;
+	overflow: hidden;
+	padding-bottom: 40px;
+        width: 470px;
+}
+#dropbox .message{
+	font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        padding-top:160px;
+        display: block;
+}
+
+#dropbox .message i{
+	color:#999;
+	font-size:12px;
+}
+
+#dropbox:before{
+	border-radius:3px 3px 0 0;
+}
+/*-------------------------
+	Image Previews
+--------------------------*/
+#dropbox .preview{
+	width: 122px;
+	height: 107px;
+	float:left;
+	margin: 15px 0 0 28px;
+	position: relative;
+	text-align: center;
+}
+
+#dropbox .preview img{
+	max-width: 120px;
+	max-height: 90px;
+	border:3px solid #fff;
+	display: block;
+	box-shadow:0 0 2px #000;
+}
+
+#dropbox .imageHolder{
+	display: inline-block;
+	position:relative;
+}
+
+#dropbox .uploaded{
+	position: absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background: url('../images/fileupload/done.png') no-repeat center center rgba(255,255,255,0.5);
+	display: none;
+}
+#dropbox .preview.done .uploaded:hover {
+        cursor: pointer;
+        background: url('../images/fileupload/delete.png') no-repeat center center rgba(255,255,255,0.5);
+}
+#dropbox .preview.done .uploaded{
+	display: block;
+}
+/*-------------------------
+	Progress Bars
+--------------------------*/
+#dropbox .progressHolder{
+	position: absolute;
+	background-color:#fff;
+	height:7px;
+	width:100%;
+	left:0;
+	bottom: 0;
+	
+	box-shadow:0 0 2px #000;
+}
+
+#dropbox .progress{
+	background-color:#2586d0;
+	position: absolute;
+	height:100%;
+	left:0;
+	width:0;
+	
+	box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset;
+	
+	-moz-transition:0.25s;
+	-webkit-transition:0.25s;
+	-o-transition:0.25s;
+	transition:0.25s;
+}
+
+#dropbox .preview.done .progress{
+	width:100% !important;
+}
+
+
+/*-------------------------
+	Dynamic Textarea
+--------------------------*/
+.textAreanone {
+    padding-left: 5px;
+    display: none;
+    font-size: 21px;
+    width: 470px;
+    word-wrap: break-word;
+}
+.textArea {
+    width: 470px;
+    min-height: 50px;
+    overflow: hidden;
+}
+
+/*-------------------------
+	Message Area
+--------------------------*/
+
+#messageBox{
+    background: #fff;
+    opacity: 0.6;
+    text-shadow: 0px 1px 0px #262626;
+    color: #000;
+    height: 60px;
+    padding: 0px;
+    margin-top:-10px;
+    width:400px;
+    text-align: center;
+    font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+#messageBox p b{
+	font-size:25px;
+	
+}

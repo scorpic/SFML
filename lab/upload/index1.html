@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>dv</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+        <script type="text/javascript" src="../../script/jquery.js"></script>
+        <script type="text/javascript" src="../../script/jquery.backcolor.js"></script>
+        <script type="text/javascript" src="../../script/jquery.filedrop.js"></script>
+        <script type="text/javascript" src="../../script/fileupload.js"></script>
+    </head>
+    <body>
+        <style>
+  .thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+  .drag {
+      width: 300px;
+      height: 200px;
+      border: 3px dashed #999;
+      text-align: center;
+      backgrou
+  }
+  .file_upload_text {
+    margin-top: 60px;   
+}
+  .hover {
+      background: #eee;
+  }
+  .free {
+      background: #fff;
+  }
+  .error {
+      background: #faa;
+      border-color: #f00;
+  }
+  .load {
+      background: url('../../template/images/search-preloader.gif') no-repeat center;
+  }
+</style>
+        <div id="error"></div>
+        <div class="drag" id="drag">
+            <div class="file_upload_text" id="dropzone">Выберите файлы</div>
+        </div>
+        <input type="file" id="files" name="file[]" multiple />
+<output id="list"></output>
+
+ 
+    </body>
+</html>

@@ -1,0 +1,110 @@
+.buttonVK {
+    border-color: #789ABF #5980A9 #5980A9 #5980A9;
+    border-radius: 3px;
+    background: url(../images/button_vk.png) #6181A6 repeat-x top;
+    background-position: 0px -6px; padding: 4px 14px; margin: 0 4px; height: 20px; text-align: center; top: 100px;
+    float: left;
+    font-size: 15px;
+}
+.buttonVK a {
+    color: white;
+    text-shadow: 0 1px 0 #45688E;
+}
+.images {
+    width: 293px;
+    display: none;
+    float: left;
+}
+.answer {
+    width: 390px;
+    float: left;
+    margin-bottom: 5px;
+}
+.ask {
+    font-size: 28px;
+    color: #4E4E4E;
+    width: 650px;
+    min-height: 55px;
+    word-wrap: break-word
+}
+ul.ans {
+    float: left;
+}
+li.a {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 7px;
+    cursor: pointer;
+    -moz-user-select: none; -webkit-user-select: none; 
+    min-width: 50px;
+    
+}
+li.b {
+    margin-right: 8px; 
+}
+ul *.a:hover {
+    background-color: #eee;
+}
+ul.ans .InputAns {
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 0px;
+}
+ul.ans .but {
+    height: 20px;
+    padding: 9px 12px 9px 12px;
+    border: 1px solid #CCC;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 14px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+ul.ans .but:hover {
+    background-color: #ddd;
+}
+.scale {
+    width: 640px;
+    height: 40px;
+    float: left;
+    position: relative;
+    bottom: 0;
+}
+li.s {
+    border: 1px solid #666;
+    width: 30px;
+    height: 20px;
+    background-color: #fff;
+    float: left;
+    margin: 0 0px 0 0px;
+}
+button.false {
+    background-color: #ff0800;
+}
+button.true {
+    background-color: #adff2f;
+}
+ul.sc {
+    padding: 0px;
+}
+.errormsg {
+    margin: 15px 15px 0 15px;
+    font-size: 15px;
+    padding: 8px 11px;
+}
+.percent {
+    font-size: 100px;
+    font-weight: bold;
+    float: left;
+    width: 170px;
+    color: #666;
+    margin: 40px 100px;
+}
+.inform {
+    float: left;
+    font-size: 18px;
+    width: 400px;
+}

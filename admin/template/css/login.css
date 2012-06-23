@@ -1,0 +1,46 @@
+body {
+    background: url('../images/bg_tile.jpg');
+}
+a {
+    text-decoration: none;
+    color: #2D76B9;
+}
+.table {
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+.header {
+    height: 40px;
+    font-size: 26px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.back {
+    height: 40px;
+}
+.inp {
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 8px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.inp:focus {
+   border:1px solid #42aaff;
+   box-shadow: 0 0 10px #42aaff;
+   -webkit-box-shadow: 0 0 10px #42aaff;
+   -moz-box-shadow: 0 0 10px #42aaff;
+}
+button {
+    padding: 5px 20px;
+    font-size: 19px;
+}

@@ -1,0 +1,13 @@
+lang['test_complete']='Тест закончен';
+lang['enter_answer']='Введите ответ';
+lang['reply']='Ответить';
+lang['arr_seconds']=['секунду','секунды','секунд'];
+lang['arr_questions']=['%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81','%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2','%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2'];
+lang['tell_vk']='Рассказать Вконтакте';
+lang['test_complete_in']='Тест пройден за ';
+lang['number_true_answers']='Количество правильных ответов - ';
+lang['test_complete_on']='Тест выполнен на ';
+lang['ajax_error']='Программа обнаружила ошибку, когда выполнялся запрос';
+lang['on_page']='на страницу: ';
+lang['refresh']='Пройти заново';
+lang['you_cannot_test_complete']='Дальнейшее прохождение теста невозможно';

@@ -1,0 +1,113 @@
+*{
+	/* A universal page reset */
+	margin:0;
+	padding:0;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	font-size:14px;
+	color:#fcfcfc;
+	background-color:#0d4362;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* The bouncing box */
+
+#messageBox{
+	background:url('img/box_bg.jpg') repeat-x center top #fcfcfc;
+	height:60px;
+	padding:10px;
+	margin-top:-10px;
+	padding-top:30px;
+	width:400px;
+	border:1px solid #fcfcfc;
+	color:#494848;
+        text-align: center;
+	text-shadow:1px 1px 0 white;
+	font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+}
+
+#messageBox p{
+	font-size:25px;
+}
+
+#messageBox p b{
+	font-size:30px;
+	display:block;
+}
+
+#messageBox,
+#main,
+a.button{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Styling the big button */
+
+a.button{
+	color:white;
+	letter-spacing:-2px;
+	padding:20px;
+	display:block;
+	text-shadow:1px 1px 0 #145982;
+	font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+	font-size:80px;
+	font-weight:bold;
+	text-align:center;
+	width:350px;
+	border:1px solid #60b4e5;
+	
+	margin:60px auto;
+	
+	/*
+		CSS3 gradients for webkit and mozilla browsers,
+		fallback color for the rest:
+	*/
+	
+	background-color: #59aada;
+	background-image: -moz-linear-gradient(#5eb2e2, #4f9cca);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5eb2e2), to(#4f9cca));
+}
+
+a.button:hover{
+	text-decoration:none;
+	background-color: #5eb2e2;
+	background-image: -moz-linear-gradient(#6bbbe9, #57a5d4);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6bbbe9), to(#57a5d4));
+}
+
+/* Only needed for the demonstration page */
+
+#main{
+	background-color:#073753;
+	height:500px;
+	margin:140px auto 50px;
+	padding:90px 30px 0;
+	position:relative;
+	width:640px;
+}
+
+#main p{
+	color:#ccc;
+	font-size:19px;
+	line-height:1.4;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+#main p strong{
+	color:white;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}

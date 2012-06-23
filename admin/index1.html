@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Главная</title>
+<link href="../style/style.css" rel="stylesheet" type="text/css" />
+<link href="admin/template/css/main.css" rel="stylesheet" type="text/css" /></head>
+<body>
+<div class="wrapper">
+  <table width="100%">
+    <tr>
+      <td><div class="header"><a href="../"><img src="../template/images/logo.png" /></a>
+<div class="menu">
+<ul class="list"><li><a href="../">Перейти к сайту</a></li></ul>
+</div>
+</div></td>
+    </tr><tr><td style="background-color: #fff; border-radius: 5px;">
+   <form action="index.php?act=addtest" method="post">
+   <div class="headi" style="margin: 10px;">Добавление теста     </div>
+   <table width="100%" border="0">
+     <tr>
+         <td width="26%" class="ListTableLeftBar">Название теста</td>
+         <td width="74%"><input name="title" type="text" style="width: 400px" maxlength="150" />&nbsp;</td>
+       </tr>
+       <tr>
+         <td class="ListTableLeftBar">Предмет</td>
+         <td><select name="subject">
+           <option value="1">предмет 1</option>
+           <option value="2">предмет 2</option>
+         </select></td>
+       </tr>
+       <tr>
+         <td class="ListTableLeftBar">Будет ли показываться?</td>
+         <td><input name="status" type="checkbox" value="2" />&nbsp;</td>
+       </tr>
+       <tr>
+         <td class="ListTableLeftBar">&nbsp;</td>
+         <td><input name="ok" type="button" value="Сохранить" />&nbsp;</td>
+       </tr>
+   </table>
+     <p>&nbsp;</p>
+   
+   </form>
+        </td>
+    </tr>    <tr>
+      <td><div class="footer"><span class="foo">© нам 100500 лет | эсфэмэлейшен карпорэйшн | Все права защищены</span></div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

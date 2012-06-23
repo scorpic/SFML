@@ -1,0 +1,15 @@
+ul.mainli {
+    display: inline;
+}
+ul.mainli li.sub {
+    padding: 3px 5px 7px 5px;
+    width: 170px;
+    float: left;
+}
+li.sub a {
+    color: #4C4C4C;
+    font-size: 18px;
+}
+li.sub a:hover {
+    text-decoration: underline;
+}

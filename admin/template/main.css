@@ -1,0 +1,161 @@
+/* Глобальное */
+body {
+    background-image: url('../upload/images/main/{%SRC_IMG%}');
+}
+#wrapper {
+    margin: 0 auto;
+    width: 972px;
+}
+a { text-decoration: none; }
+li { list-style-type: none; }
+/* Меню */
+#menu {
+    background: #F26321;
+    margin: 0 auto;
+    margin-top: -15px;
+    height: 33px;
+    width: 960px;
+    border-radius: 10px;
+}
+#menu ul {
+    list-style-type: none;
+    position: relative;
+    padding: 6px;
+}
+#menu li.menu {
+    float: left;
+    position: relative;
+    padding: 0 20px;
+    border-right: 1px solid #fff;
+}
+#menu li.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Тело */
+#body {
+    background-color: #cfff;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    clear:both;
+    height: auto;
+    float: left;
+}
+#block_news {
+    width: 250px;
+    float: left;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.title_block {
+    background-color: #53bee3;
+    padding: 7px 0 5px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.news_id {
+    width: 240px;
+    border-bottom: 1px solid #ccc;
+}
+.news_title {
+    padding: 10px 0 5px 10px;
+}
+.news_title a {
+    color: #0090D2;
+    font-size: 16px;
+}
+.news_text {
+    font-size: 16px;
+    padding-left: 10px;
+}
+.sp_title  {
+    font-size: 18px;
+	color: #0090D2;
+}
+#block_foto {
+    background-color: #fff;
+    float: right;
+    width: 692px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.title_notblock {
+    color: #0090D2;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 0 5px 10px;
+}
+
+#block_links {
+    width:  250px;
+    border-radius: 10px;
+    left: 0px;
+    float: left;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.one_link {
+    margin: 2px 0 5px 10px;
+}
+.one_link a {
+    color: #0090D2;
+}
+
+
+#block_hotels {
+    background-color: #fff;
+    float: right;
+    width: 692px;
+    border-radius: 10px;
+    margin: 10px 0 0 10px;
+}
+#block_hotels img {
+    margin: 25px;
+}
+
+#footer {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    clear: both;
+    float: none;
+    margin: 0px;
+    padding: 20px 0 0 0;
+}
+.footer_bg {
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 30px;
+    padding: 8px 0 0 8px;
+}
+#about {
+    float: right;
+    margin: 3px 13px 0 0;
+    font-size: 14px;
+}
+#about a {
+    color: #0090D2;
+}
+#pageHome h3 {}
+.homeBanner { margin: 0 auto 30px; height: 320px; overflow: hidden; position: relative; width: 670px;}
+.bannerTextBox { top: 0px; height: 320px; right: 0px; padding: 10px 5px 20px 10px; position: absolute; width: 200px;}
+.bannerTextBox * { display: block; }
+.bannerTextBox .title { color: #F26321; text-shadow: #000 3px 3px 9px; filter: Shadow(Color=#000, Strength=4); font-size: 26px; font-weight: bold; margin: 0px; }
+.bannerTextBox .title{ font-family: "Interstate"; text-transform: uppercase; }
+.bannerTextBox .desc { margin-bottom: 6px; color: #fff;}
+.bannerTextBox a:hover { color: #fff; }
+
+/* Shared Cycle Nav Buttons */
+.cycleNav { bottom: 20px; height: 46px; position: absolute; right: 0px; width: 84px; z-index: 1000;}
+.cycleNav ul { position: relative; list-style-type: none; }
+.cycleNav li { position: relative; float: left; }
+.cycleNav li a { background-image: url('http://www.printmornyc.com/lib/css/images/arrow-banner-nav-sprite.png'); background-repeat: no-repeat; display: block; height: 40px; margin: 0 6px 0px 0; text-indent: -9000px; width: 40px; }
+.cycleNav li.prevBtn a { background-position: 0px 0px;}
+.cycleNav li.prevBtn a:hover { background-position: -57px 0px;}
+.cycleNav li.nextBtn a { background-position: 0px -40px;}
+.cycleNav li.nextBtn a:hover { background-position: -57px -40px;}
+

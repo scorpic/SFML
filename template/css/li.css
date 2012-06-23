@@ -1,0 +1,40 @@
+div.square {
+    margin: 5px 8px 0px 8px;
+    padding: 9px 6px 0px 6px;
+    overflow: hidden;
+    background: #f7f7f7;
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 150px;
+    display: inline-block; 
+    
+}
+a.subject_img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    font-size: 14px;
+}
+div.a {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    top: 0px;
+    margin-top: 124px;
+    padding: 4px 0px 10px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+ul.test li.sub a {
+    color: #4C4C4C;
+    font-size: 18px;
+    line-height: 1.5;
+}
+li.sub a:hover {
+    text-decoration: underline;
+}

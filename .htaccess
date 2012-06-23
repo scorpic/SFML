@@ -1,0 +1,4 @@
+ErrorDocument 404 /template/404.html
+
+RewriteEngine On
+RewriteRule ^([a-z]+)\.sfml\.tom\.ru(.*) $1\.$2 [L] 

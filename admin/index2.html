@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Главная</title>
+<link href="../style/style.css" rel="stylesheet" type="text/css" />
+<link href="admin/template/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/addanswers.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <table width="100%">
+    <tr>
+      <td><div class="header"><a href="../"><img src="../template/images/logo.png" /></a>
+<div class="menu">
+<ul class="list"><li><a href="../">Перейти к сайту</a></li></ul>
+</div>
+</div></td>
+    </tr><tr><td style="background-color: #fff; border-radius: 5px;">
+   <form action="index.php?act=addtest" method="post">
+   <div class="headi" style="margin: 10px 0 0 10px;">Добавление вопросов     </div>
+   <div class="hint" style="margin: 0 0 10px 10px;">Поставьте галочку рядом с ответом, который правильный.</div>
+   <table width="100%" border="0" id="table">
+     <tr>
+         <td width="26%" align="right" class="ListTableLeftBar">Вопрос:</td>
+         <td width="74%"><input name="title" type="text" style="width: 400px" maxlength="150" />&nbsp;</td>
+       </tr>
+       <tr style="-moz-user-select: none; -webkit-user-select: none; ">
+         <td align="right" class="ListTableLeftBar" >Варианты ответа<br />
+             <span class="hint" ><span id="addans" class="addansact" style="color: #69C;">добавить</span> | <span id="delans">удалить</span></span></td>
+         <td><input type="text"  name="answer1" /> <input type="checkbox" name="ok1" value="2" /></td>
+       </tr>
+   </table>
+     <table width="100%" border="0" style="margin-top: 30px;">
+       <tr>
+         <td width="225px" align="right" class="ListTableLeftBar">&nbsp;</td>
+         <td><input type="hidden" name="number" id="valans" value="1"><input type="hidden" name="id" value="1"><input name="ok" type="button" value="Сохранить" /> или <input name="ok" type="button" value="Сохранить и добавить еще один вопрос" /> &nbsp;</td>
+       </tr>
+   </table>
+   
+   </form>
+        </td>
+    </tr>    <tr>
+      <td><div class="footer"><span class="foo">© нам 100500 лет | эсфэмэлейшен карпорэйшн | Все права защищены</span></div></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

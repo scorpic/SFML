@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>dv</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+        <script type="text/javascript" src="../../script/jquery.js"></script>
+        <script type="text/javascript" src="../../script/jquery.backcolor.js"></script>
+        <script type="text/javascript" src="../../script/jquery.filedrop.js"></script>
+        <script type="text/javascript" src="../../script/fileupload.js"></script>
+        <script>
+     $(document).ready(function() {
+         var maxfilesize = 1000000,
+             dropZone = $('#drag'),
+             mess = $('.file_upload_text');
+         // Проверим на поддержку File API
+         if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
+            mess.text('К сожалению загрузка картинок не возможна');
+            dropZone.addClass('error');
+         }
+         function ErrorCritical(message) {
+             mess.text(message);
+                 dropZone.removeClass('load');
+                 dropZone.addClass('error');
+                 dropZone.css('border-color','#999');
+                 $("#drag").stop().animate({
+                    backgroundColor : '#fff',
+                    borderColor : '#333',
+                    opacity: 0.5
+                   }, 1000);
+                 return false;
+             }
+         dropZone[0].ondragover = function () {
+                dropZone.addClass('hover');
+                return false;
+         };
+         dropZone[0].ondragleave = function () {
+                dropZone.removeClass('hover');
+                return false;
+         };
+         dropZone[0].ondrop = function(event) {
+             event.preventDefault();
+             dropZone.removeClass('hover');
+             dropZone.addClass('load');
+             mess.text('Загрузка изображения');
+             var file = event.dataTransfer.files[0];
+             if(!file.type.match(/^image\//)){
+                ErrorCritical('Можно загружать только изображения');
+                return false;
+             }
+             if (file.size > maxfilesize) {
+                ErrorCritical('Изображение слишком большое'); 
+                return false;
+             }
+            var xhr = new XMLHttpRequest();
+            xhr.upload.addEventListener('progress', uploadProgress, false);
+            xhr.onreadystatechange = stateChange;
+            xhr.open('POST', '/upload.php');
+            xhr.setRequestHeader('X-FILE-NAME', file.name);
+            xhr.send(file);
+         
+         }
+     });
+
+</script>
+    </head>
+    <body>
+        <style>
+  .thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+  }
+  .drag {
+      width: 300px;
+      height: 200px;
+      border: 3px dashed #999;
+      text-align: center;
+      backgrou
+  }
+  .file_upload_text {
+    margin-top: 60px;   
+}
+  .hover {
+      background: #eee;
+  }
+  .free {
+      background: #fff;
+  }
+  .error {
+      background: #faa;
+      border-color: #f00;
+  }
+  .load {
+      background: url('../../template/images/search-preloader.gif') no-repeat center;
+  }
+</style>
+        <div id="error"></div>
+        <div class="drag" id="drag">
+            <div class="file_upload_text">Выберите файлы</div>
+        </div>
+        <input type="file" id="files" name="file[]" multiple />
+<output id="list"></output>
+
+ 
+    </body>
+</html>
